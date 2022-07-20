@@ -1,0 +1,143 @@
+1.Employee
+
+
+create table employee(Employee_No int,FirstName  varchar(20),LastName Varchar(20),Department Char(20))
+
+insert into employee values(118,'Riley','Griffin','Business')
+insert into employee values(123,'Bryn','Underwood','Information Tech')
+insert into employee values(156,'Anna','Thanh','Administration')
+insert into employee values(166,'Justin','Brownworth','Business')
+insert into employee values(120,'Sarah','McDonald','Services')
+insert into employee values(134,'Tammy','Hubber','Manager')
+
+select * from employee
+
+------------------------------------------------------------------------------------------------------------------
+2.Vehicle
+
+
+create table Vehicle(Reg_No varchar(20),Make varchar(20),Model Varchar(20),Year int,Colour Char(20))
+
+insert into Vehicle values('BRG446','Ford','Meteor', 2009,'White')
+insert into Vehicle values('VRG655','BMW','Coupe', 2008,'Blue')
+insert into Vehicle values('NMT667','Mazda','Delivery Van', 2010,'Green')
+insert into Vehicle values('CCT899','Toyota','HiLuxe', 2009,'Red')
+insert into Vehicle values('FGR122','Mitsubishi','Magna', 2007,'Purple')
+
+
+select * from Vehicle
+--------------------------------------------------------------------------------------------------------------------
+3.Employee Vehicle
+
+
+
+create table Employee_Vehicle(Employee_veh varchar(20),Reg_No varchar(20),Employee_No smallint,Date_Taken date,Date_Returned date)
+
+insert into Employee_Vehicle values('A12','BRG446',118,'01-09-2011','03-09-2011')
+insert into Employee_Vehicle values('A13','NMT667',156,'02-09-2011','03-09-2011')
+insert into Employee_Vehicle values('A14','CCT899',166,'02-09-2011','04-09-2011')
+insert into Employee_Vehicle values('A15','FGR122',134,'03-09-2011','05-09-2011')
+insert into Employee_Vehicle values('A16','BRG446',118,'04-09-2011','10-09-2011')
+insert into Employee_Vehicle values('A17','NMT667',166,'05-09-2011','10-09-2011')
+insert into Employee_Vehicle values('A18','NMT667',134,'11-09-2011','15-09-2011')
+insert into Employee_Vehicle values('A19','FGR122',166,'12-09-2011','15-11-2011')
+insert into Employee_Vehicle values('A20','NMT667',118,'14-11-2011','15-11-2011')
+
+
+select * from Employee_Vehicle
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+4.Invoice
+
+create table Invoice(Invoice int,Cust int)
+
+insert into Invoice values(1001,43)
+insert into Invoice values(1002,55)
+insert into Invoice values(1003,43)
+
+select * from Invoice
+----------------------------------------------------------------------------------------------------------------------------------------------
+5.Customer
+
+create table Customer(Cust int,Name char(20), Address varchar(50) )
+
+insert into Customer values(43,'Jones','121 1st')
+insert into Customer values(55,'Smith','222 2nd')
+
+select * from Customer
+-------------------------------------------------------------------------------------------------------------------------------------------------
+6.Lineitem
+
+
+create table Lineitem(Invoice int,Line int,Quant1 int,Part1 Char(20),Amt1 smallmoney)
+
+insert into Lineitem values(1001,1,200,'Screw',2.00)
+insert into Lineitem values(1001,2,300,'Nut',2.25)
+insert into Lineitem values(1001,3,100,'Washer',0.75)
+insert into Lineitem values(1002,1,1,'Motor',52.00)
+insert into Lineitem values(1002,2,10,'Saw',121.00)
+insert into Lineitem values(1003,1,5,'Brace',44.44)
+
+
+select * from Lineitem
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+7.Party
+
+create table Party(pid varchar(20),pname char(20),ploc char(5),pincome int,pcode int)
+
+insert into Party values('p1','Raj','hyd',25000,10)
+insert into Party values('p2','Kumar','che',35000,20)
+insert into Party values('p3','Shekar','hyd',45000,30)
+insert into Party values('p4','Sanjeev','uk',35000,20)
+
+
+
+select * from Party
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q1.	WHAT ARE THE ADVANTAGES OF SQL SERVER?
+	a)Installation of different Server on one Machine.
+	b)Reduce Temporary Database Problem.
+	c)Maintain Standby Server
+
+
+Q2. 	WHAT IS SQL ?	
+	Structured Query Language for the data manggement in the server and it was founded by microsoft.
+	
+	WHAT IS T-SQL?
+	Transact-SQL used for the sybase and microsoft that add several features to the SQL.
+
+Q3. 	WHAT ARE THE OPERATIONS WE CAN PERFORM USING SQL or T-SQL ?
+	In SQL we use Logical Operater, Arthematic Operater and CRUD
+	In T-SQL we use Select statement, Lablling outputs, Selecting columns.
+
+
+Q4. 	WHAT ARE THE DIFFERENT VERSIONS OF SQL SERVER?
+	SQL Server 2017 
+	SQL Server 2016 
+	SQL Server 2014 
+	SQL Server 2012 
+	SQL Server 2008 
+	SQL Server 2008 
+	SQL Server 2005 
+	SQL Server 2000 
+
+Q5.	WHAT ARE THE DIFFERENT EDITIONS OF SQL SEVRVER?
+	a)Enterprise
+	b)Developer
+	c)Standard
+	d)Web edition 
+	e)Data Center
+
+Q6. 	WHAT KINDS OF DATABASES DOES SQL SERVER SUPPORT?
+	Relational Databases are supported in SQL Server.
+
+Q7.	HOW CAN YOU SAY THAT SQL SERVER IS HIGHLY SCALABLE?
+	Scaling Adding or removing database in order to adjust capacity or overall Performance.
+
+Q8. 	WHAT ARE THE FEATURES (COMPONENTS) INSIDE SQL SERVER?
+	a)Platform Choice
+	b)High Availability 
+	c)developer experience
+	d)intelligent Database		
+
+
